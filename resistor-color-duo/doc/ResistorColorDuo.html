@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>
+        Class: ResistorColorDuo
+
+        &mdash; Documentation by YARD 0.9.20
+
+    </title>
+
+    <link charset="utf-8" href="css/style.css" rel="stylesheet" type="text/css"/>
+
+    <link charset="utf-8" href="css/common.css" rel="stylesheet" type="text/css"/>
+
+    <script charset="utf-8" type="text/javascript">
+        pathId = "ResistorColorDuo";
+        relpath = '';
+    </script>
+
+
+    <script charset="utf-8" src="js/jquery.js" type="text/javascript"></script>
+
+    <script charset="utf-8" src="js/app.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+<div class="nav_wrap">
+    <iframe id="nav" src="class_list.html?1"></iframe>
+    <div id="resizer"></div>
+</div>
+
+<div id="main" tabindex="-1">
+    <div id="header">
+        <div id="menu">
+
+            <a href="_index.html">Index (R)</a> &raquo;
+
+
+            <span class="title">ResistorColorDuo</span>
+
+        </div>
+
+        <div id="search">
+
+            <a class="full_list_link" href="class_list.html"
+               id="class_list_link">
+
+                <svg height="24" width="24">
+                    <rect height="4" rx="1" ry="1" width="24" x="0" y="4"></rect>
+                    <rect height="4" rx="1" ry="1" width="24" x="0" y="12"></rect>
+                    <rect height="4" rx="1" ry="1" width="24" x="0" y="20"></rect>
+                </svg>
+            </a>
+
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div id="content"><h1>Class: ResistorColorDuo
+
+
+    </h1>
+        <div class="box_info">
+
+            <dl>
+                <dt>Inherits:</dt>
+                <dd>
+                    <span class="inheritName">Object</span>
+
+                    <ul class="fullTree">
+                        <li>Object</li>
+
+                        <li class="next">ResistorColorDuo</li>
+
+                    </ul>
+                    <a class="inheritanceTree" href="#">show all</a>
+
+                </dd>
+            </dl>
+
+
+            <dl>
+                <dt>Defined in:</dt>
+                <dd>resistor_color_duo.rb</dd>
+            </dl>
+
+        </div>
+
+        <h2>Overview</h2>
+        <div class="docstring">
+            <div class="discussion">
+
+                <p>Class to determine the resistance of a resistor via color coding.</p>
+
+
+            </div>
+        </div>
+        <div class="tags">
+
+            <p class="tag_title">Author:</p>
+            <ul class="author">
+
+                <li>
+
+
+                    <div class='inline'>
+                        <p>Taylor-Jayde Blackstone &lt;t.blackstone@inspyre.tech&gt;</p>
+                    </div>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <h2>
+            Class Method Summary
+            <small><a class="summary_toggle" href="#">collapse</a></small>
+        </h2>
+
+        <ul class="summary">
+
+            <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#value-class_method" title="value (class method)">.<strong>value</strong>(colors)  &#x21d2; Integer </a>
+    
+
+    
+  </span>
+
+
+                <span class="summary_desc"><div class='inline'>
+<p>Function to translate colored bands found on resistors to an actual
+numerical value.</p>
+</div></span>
+
+            </li>
+
+
+        </ul>
+
+
+        <div class="method_details_list" id="class_method_details">
+            <h2>Class Method Details</h2>
+
+
+            <div class="method_details first">
+                <h3 class="signature first" id="value-class_method">
+
+                    .<strong>value</strong>(colors) &#x21d2; <tt>Integer</tt>
+
+
+                </h3>
+                <div class="docstring">
+                    <div class="discussion">
+
+                        <p>Function to translate colored bands found on resistors to an actual
+                            numerical value</p>
+
+
+                    </div>
+                </div>
+                <div class="tags">
+                    <p class="tag_title">Parameters:</p>
+                    <ul class="param">
+
+                        <li>
+
+                            <span class='name'>colors</span>
+
+
+                            <span class='type'>(<tt>Array</tt>)</span>
+
+
+                            &mdash;
+                            <div class='inline'>
+                                <p>An array of colors to translate to a resistance measurement</p>
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                    <p class="tag_title">Returns:</p>
+                    <ul class="return">
+
+                        <li>
+
+
+                            <span class='type'>(<tt>Integer</tt>)</span>
+
+
+                        </li>
+
+                    </ul>
+
+                </div>
+                <table class="source_code">
+                    <tr>
+                        <td>
+      <pre class="lines">
+
+
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56</pre>
+                        </td>
+                        <td>
+      <pre class="code"><span class="info file"># File 'resistor_color_duo.rb', line 35</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span
+                  class='id identifier rubyid_value'>value</span><span class='lparen'>(</span><span
+                  class='id identifier rubyid_colors'>colors</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_nums'>nums</span> <span class='op'>=</span> <span class='lbracket'>[</span><span
+                  class='rbracket'>]</span> <span class='comment'># set up empty array to contain results
+</span>
+  <span class='comment'># Start a loop that iterates through the first two
+</span>  <span class='comment'># strings of the array to search for the numerical
+</span>  <span class='comment'># value
+</span>  <span class='id identifier rubyid_colors'>colors</span><span class='lbracket'>[</span><span
+                  class='int'>0</span><span class='op'>..</span><span class='int'>1</span><span
+                  class='rbracket'>]</span><span class='period'>.</span><span
+                  class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span
+                  class='op'>|</span><span class='id identifier rubyid_c'>c</span><span class='op'>|</span>
+    <span class='id identifier rubyid_c'>c</span><span class='period'>.</span><span
+                  class='id identifier rubyid_downcase'>downcase</span> <span class='comment'># downcase the search query
+</span>
+    <span class='comment'># search the hash for the color, return the
+</span>    <span class='comment'># value
+</span>    <span class='id identifier rubyid_res'>res</span> <span class='op'>=</span> <span class='ivar'>@color_to_value</span><span
+                  class='lbracket'>[</span><span class='id identifier rubyid_c'>c</span><span
+                  class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span><span
+                  class='rbracket'>]</span>
+
+    <span class='comment'># Put the result in the &#39;nums&#39; array
+</span>    <span class='id identifier rubyid_nums'>nums</span> <span class='op'>&lt;&lt;</span> <span
+                  class='id identifier rubyid_res'>res</span>
+
+  <span class='kw'>end</span>
+
+  <span class='comment'># return the &#39;nums&#39; array to the caller as an
+</span>  <span class='comment'># integer
+</span>  <span class='id identifier rubyid_nums'>nums</span><span class='period'>.</span><span
+                  class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='tstring'><span
+                  class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span
+                  class='rparen'>)</span><span class='period'>.</span><span
+                  class='id identifier rubyid_to_i'>to_i</span>
+<span class='kw'>end</span></pre>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="footer">
+        Generated on Sat Oct 26 20:14:21 2019 by
+        <a href="http://yardoc.org" target="_parent" title="Yay! A Ruby Documentation Tool">yard</a>
+        0.9.20 (ruby-2.5.1).
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>
+        File: README
+
+        &mdash; Documentation by YARD 0.9.20
+
+    </title>
+
+    <link charset="utf-8" href="css/style.css" rel="stylesheet" type="text/css"/>
+
+    <link charset="utf-8" href="css/common.css" rel="stylesheet" type="text/css"/>
+
+    <script charset="utf-8" type="text/javascript">
+        pathId = "README";
+        relpath = '';
+    </script>
+
+
+    <script charset="utf-8" src="js/jquery.js" type="text/javascript"></script>
+
+    <script charset="utf-8" src="js/app.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+<div class="nav_wrap">
+    <iframe id="nav" src="class_list.html?1"></iframe>
+    <div id="resizer"></div>
+</div>
+
+<div id="main" tabindex="-1">
+    <div id="header">
+        <div id="menu">
+
+            <a href="_index.html">Index</a> &raquo;
+            <span class="title">File: README</span>
+
+        </div>
+
+        <div id="search">
+
+            <a class="full_list_link" href="class_list.html"
+               id="class_list_link">
+
+                <svg height="24" width="24">
+                    <rect height="4" rx="1" ry="1" width="24" x="0" y="4"></rect>
+                    <rect height="4" rx="1" ry="1" width="24" x="0" y="12"></rect>
+                    <rect height="4" rx="1" ry="1" width="24" x="0" y="20"></rect>
+                </svg>
+            </a>
+
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div id="content">
+        <div id='filecontents'>
+            <h1 id="label-Resistor+Color+Duo">Resistor Color Duo</h1>
+
+            <p>If you want to build something using a Raspberry Pi, you&#39;ll probably
+                use <em>resistors</em>. For this exercise, you need to know two things
+                about them:</p>
+            <ul>
+                <li>
+                    <p>Each resistor has a resistance value.</p>
+                </li>
+                <li>
+                    <p>Resistors are small - so small in fact that if you printed the resistance
+                        value on them, it would be hard to read. To get around this problem,
+                        manufacturers print color-coded bands onto the resistors to denote their
+                        resistance values. Each band has a position and a numeric value. For
+                        example, if they printed a brown band (value 1) followed by a green band
+                        (value 5), it would translate to the number 15.</p>
+                </li>
+            </ul>
+
+            <p>In this exercise you are going to create a helpful program so that you
+                don&#39;t have to remember the values of the bands. The program will take
+                color names as input and output a two digit number, even if the input is
+                more than two colors!</p>
+
+            <p>The colors are mapped to the numbers from 0 to 9 in the sequence: Black -
+                Brown - Red - Orange - Yellow - Green - Blue - Violet - Grey - White</p>
+
+            <p>From the example above: brown-green should return 15 brown-green-violet
+                should return 15 too, ignoring the third color.</p>
+            <hr>
+
+            <p>For installation and learning resources, refer to the <a
+                    href="http://exercism.io/languages/ruby/resources">Ruby resources page</a>.</p>
+
+            <p>For running the tests provided, you will need the Minitest gem. Open a
+                terminal window and run the following command to install minitest:</p>
+
+            <pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_gem'>gem</span> <span
+                    class='id identifier rubyid_install'>install</span> <span class='id identifier rubyid_minitest'>minitest</span>
+</code></pre>
+
+            <p>If you would like color output, you can <code>require
+                &#39;minitest/pride&#39;</code> in the test file, or note the alternative
+                instruction, below, for running the test file.</p>
+
+            <p>Run the tests from the exercise directory using the following command:</p>
+
+            <pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_ruby'>ruby</span> <span
+                    class='id identifier rubyid_resistor_color_duo_test'>resistor_color_duo_test</span><span
+                    class='period'>.</span><span class='id identifier rubyid_rb'>rb</span>
+</code></pre>
+
+            <p>To include color from the command line:</p>
+
+            <pre class="code ruby"><code class="ruby">ruby -r minitest/pride resistor_color_duo_test.rb
+</code></pre>
+
+            <h2 id="label-Source">Source</h2>
+
+            <p>Maud de Vries, Erik Schierboom <a
+                    href="https://github.com/exercism/problem-specifications/issues/1464">github.com/exercism/problem-specifications/issues/1464</a>
+            </p>
+
+            <h2 id="label-Submitting+Incomplete+Solutions">Submitting Incomplete Solutions</h2>
+
+            <p>It&#39;s possible to submit an incomplete solution so you can see how
+                others have completed the exercise.</p>
+        </div>
+    </div>
+
+    <div id="footer">
+        Generated on Sat Oct 26 20:14:21 2019 by
+        <a href="http://yardoc.org" target="_parent" title="Yay! A Ruby Documentation Tool">yard</a>
+        0.9.20 (ruby-2.5.1).
+    </div>
+
+</div>
+</body>
+</html>
